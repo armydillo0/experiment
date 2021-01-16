@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+img {
+  float: left;
+}
+
+p {
+  font-size:1.3vw;
+  color: rgb(68, 68, 34);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-size:1.2vw;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+table {
+  background: rgb(235, 224, 213);
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 10px 10px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 3px rgba(0, 0, 0, 0.02);
+}
+
+th {
+  border-bottom: 1px solid white;
+  color: rgb(112, 99, 85);
+  font-size:1.1vw;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+td {
+  color: rgb(112, 157, 161);
+  font-size:1.1vw;
+  padding: 0.65em 1em;
+}
+
+
+tbody tr {
+  transition: background 0.25s ease;
+}
+
+tbody tr:hover {
+  background: rgb(219, 205, 191);
+}
+
+.disabled td {
+  color: rgb(161, 153, 153);
+}
+
+.body-style {
+  min-height: 100%;
+  font-family: 'Cardo', serif;
+  background-image: url("ship.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text-styling {
+  font-size:1vw;
+  color: #DEA94C;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content{
+  margin: 0 auto;
+  margin-top: 600px;
+  padding: 4rem 0;
+  width: 700px;
+  max-width: 100%;
+}
+
+.student {
+  color: rgb(194, 165, 136);
+  position: relative;
+  margin: 0 auto;
+  top: 320px;
+  border-right: 3px solid;
+  font-size:5vw;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.major {
+  color: rgb(85, 85, 43);
+  font-size:1.5vw;
+}
+
+.anim-typewriter {
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+             blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+  from{border-right-color: rgb(204, 68, 0);}
+  to{border-right-color: transparent;}
+}
+
+@keyframes typewriter {
+  from{width: 0;}
+  to{width: 450px;}
+}
